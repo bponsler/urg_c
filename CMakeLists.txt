@@ -10,22 +10,11 @@ set(LIBRARY_INCLUDE_DIR ${LIBRARY_DIR}/include)
 set(LIBRARY_SRC_DIR ${LIBRARY_DIR}/src)
 set(LIBRARY_SAMPLE_DIR ${LIBRARY_DIR}/samples)
 
-#find_package(catkin REQUIRED)
 find_package(ament_cmake REQUIRED)
 
 ###################################################
 ## Declare things to be passed to other projects ##
 ###################################################
-
-## LIBRARIES: libraries you create in this project that dependent projects also need
-## CATKIN_DEPENDS: catkin_packages dependent projects also need
-## DEPENDS: system dependencies of this project that dependent projects also need
-# catkin_package(
-#  INCLUDE_DIRS ${LIBRARY_INCLUDE_DIR}
-#  LIBRARIES liburg_c
-#  CATKIN_DEPENDS
-#  DEPENDS
-#)
 
 ###########
 ## Build ##
@@ -110,5 +99,5 @@ install(DIRECTORY ${LIBRARY_INCLUDE_DIR}/${PROJECT_NAME}/
 )
 
 ament_export_include_directories(include)
-ament_export_libraries(liburg_c open_urg_sensor)
+ament_export_libraries(liburg_c open_urg_sensor ${LIBS})
 ament_package()
