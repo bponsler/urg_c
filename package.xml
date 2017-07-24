@@ -16,7 +16,7 @@
   <author>Katsumi Kimoto</author>
   <author>Adrian Boeing</author>
 
-  <buildtool_depend>ament</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
