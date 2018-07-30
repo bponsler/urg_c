@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(urg_c)
 
-# Support C++11
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}" -std=c++11)
+# Support C++14
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}" -std=c++14)
 
 # Set library locations to better handle if upstream locations change
 set(LIBRARY_DIR current)
